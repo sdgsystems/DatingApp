@@ -39,7 +39,7 @@ namespace DatingApp.API.Data
             return users;
         }
 
-        public async Task<bool> SaveAllAsync()
+        public async Task<bool> SaveAll()
         {
             return await _context.SaveChangesAsync() > 0;
         }
